@@ -9,12 +9,12 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --font-size-s: 1.8rem;
-  --font-size-n: 2rem;
-  --font-size-m: 2.24rem;
-  --font-size-l: 3rem;
-  --font-size-xl: 4rem;
-  --font-size-xxl: 4.6rem;
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
 
   /* Colors */
   --white-color: #ffffff;
@@ -32,7 +32,7 @@
   --font-weight-bold: 700;
 
   /* site max width*/
-  --site-max-width: 2300px;
+  --site-max-width: 1300px;
   --border-radius-s: 5px;
   --border-radius-m: 30px;
   --border-radius-l: 15px;
@@ -53,9 +53,9 @@ button {
   border: none;
   background: none;
 }
-/* img {
+img {
   width: 100%;
-} */
+}
 .section-content {
   max-width: var(--site-max-width);
   margin: 0 auto;
@@ -122,7 +122,7 @@ header .navbar {
 .hero-section {
   min-height: 100vh;
   background: var(--primary-color);
-  padding: 300px 0;
+  padding: 120px 0;
 }
 .hero-section .section-content {
   display: flex;
@@ -174,7 +174,7 @@ header .navbar {
   background: var(--secondary-color);
 }
 .hero-section .hero-image {
-  width: 800px;
+  width: 500px;
   margin-right: 30px;
   margin-top: 8px;
 }
@@ -190,8 +190,8 @@ header .navbar {
   justify-content: space-between;
 }
 .about-section .about-image-wrapper .about-image {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   border-radius: var(--border-radius-circle);
 }
 .about-section .about-detail .section-title {
@@ -261,8 +261,8 @@ header .navbar {
   font-size: var(--font-size-m);
   text-align: center;
 }
-/* responsive style max width 1748px */
-@media screen and (max-width: 1748px) {
+/* responsive style max width 1024px */
+@media screen and (max-width: 1024px) {
   .menu-section .menu-list {
     gap: 50px;
     justify-content: center;
@@ -272,13 +272,13 @@ header .navbar {
   }
 }
 
-/* responsive style max width 1500px */
-@media screen and (max-width: 1500px) {
+/* responsive style max width 900px */
+@media screen and (max-width: 900px) {
   :root {
-    --font-size-m: 2rem;
-    --font-size-l: 2.6rem;
-    --font-size-xl: 3rem;
-    --font-size-xxl: 3.6rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
   }
   body.show-mobile-menu header::before {
     content: "";
@@ -393,8 +393,8 @@ header .navbar {
   }
 }
 
-/* responsive style max width 1000px */
-@media screen and (max-width: 1000px) {
+/* responsive style max width 600px */
+@media screen and (max-width: 600px) {
   .menu-section .menu-list {
     gap: 60px;
   }
