@@ -261,6 +261,45 @@ header .navbar {
   font-size: var(--font-size-m);
   text-align: center;
 }
+/* Testimonials section styling */
+.testimonials-section {
+  padding: 50px 0 100px;
+  background: var(--light-pink-color);
+}
+.testimonials-section .testimonials {
+  display: flex;
+  padding: 35px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.testimonials-section .testimonials .user-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 50px;
+  border-radius: var(--border-radius-circle);
+}
+.testimonials-section .testimonials .name {
+  margin-bottom: 16px;
+  font-size: var(--font-size-m);
+}
+.testimonials-section .testimonials .feedback {
+  line-height: 25px;
+}
+.testimonials-section .swiper-pagination {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  color: var(--secondary-color);
+}
+.testimonials .swiper-slide-button {
+  color: var(--secondary-color);
+  transition: 0.3s ease;
+}
+.testimonials .swiper-slide-button:hover {
+  color: var(--primary-color);
+}
 /* responsive style max width 1024px */
 @media screen and (max-width: 1024px) {
   .menu-section .menu-list {
