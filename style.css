@@ -266,6 +266,10 @@ header .navbar {
   padding: 50px 0 100px;
   background: var(--light-pink-color);
 }
+.testimonials-section .slider-wrapper {
+  overflow: hidden;
+  margin: 0 60px 50px;
+}
 .testimonials-section .testimonials {
   display: flex;
   padding: 35px;
@@ -287,19 +291,101 @@ header .navbar {
 .testimonials-section .testimonials .feedback {
   line-height: 25px;
 }
-.testimonials-section .swiper-pagination {
+.testimonials-section .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
   opacity: 1;
-  color: var(--secondary-color);
+  background: var(--secondary-color);
 }
-.testimonials .swiper-slide-button {
+.testimonials-section .swiper-slide-button {
+  margin-top: -50px;
   color: var(--secondary-color);
   transition: 0.3s ease;
 }
-.testimonials .swiper-slide-button:hover {
+.testimonials-section .swiper-slide-button:hover {
   color: var(--primary-color);
 }
+/* Gallery section style */
+
+.gallery-section {
+  padding: 50px 0 100px;
+}
+.gallery-section .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.gallery-section .gallery-list .gallery-item {
+  overflow: hidden;
+  border-radius: var(--border-radius-s);
+  width: calc(100% / 4 - 25px);
+}
+.gallery-section .gallery-item .gallery-image {
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+  transition: 0.3s ease;
+}
+.gallery-section .gallery-item:hover .gallery-image {
+  transform: scale(1.3);
+}
+/* Contact us section styling */
+.contact-section {
+  padding: 50px 0 100px;
+  background: var(--light-pink-color);
+}
+.contact-section .section-content {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.contact-section .contact-info-list .contact-info {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  align-items: center;
+}
+.contact-section .contact-info-list .contact-info i {
+  font-size: var(--border-radius-m);
+}
+.contact-section .contact-form .form-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 12px;
+  outline: none;
+  margin-bottom: 16px;
+  background: var(--white-color);
+  border-radius: var(--border-radius-s);
+  border: 1px solid var(--medium-gray-color);
+}
+.contact-section .contact-form {
+  max-width: 50%;
+}
+.contact-section .contact-form .form-input:focus {
+  border-color: var(--secondary-color);
+}
+.contact-section .contact-form .form-textarea .form-input {
+  height: 100%;
+  padding: 12px;
+  resize: vertical;
+}
+.contact-section .contact-form .submit-button {
+  padding: 10px 26px;
+  color: var(--white-color);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  background: var(--dark-green-color);
+  border-radius: var(--border-radius-m);
+  transition: 0.3s ease;
+  border: 1px solid var(--secondary-color);
+}
+.contact-section .contact-form .submit-button:hover {
+  background: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 /* responsive style max width 1024px */
 @media screen and (max-width: 1024px) {
   .menu-section .menu-list {
@@ -308,6 +394,9 @@ header .navbar {
   }
   .menu-section .menu-list .menu-item {
     width: calc(100% / 2 - 50px);
+  }
+  .gallery-section .gallery-list .gallery-item {
+    width: calc(100% / 3 - 32px);
   }
 }
 
@@ -381,7 +470,8 @@ header .navbar {
     margin-right: 0;
   }
   .hero-section .hero-detail .subtitle,
-  .hero-section .hero-detail .description {
+  .hero-section .hero-detail .description,
+  .contact-section .contact-form {
     max-width: 100%;
   }
   .hero-section .hero-detail .buttons {
@@ -397,7 +487,7 @@ header .navbar {
   }
   .about-section .about-image-wrapper .about-image {
     max-width: 100%;
-    height: 100%;
+    height: 60%;
     max-width: 250px;
     aspect-ratio: 1;
   }
@@ -430,6 +520,15 @@ header .navbar {
     max-width: 200px;
     aspect-ratio: 1;
   }
+  .gallery-section .gallery-list .gallery-item {
+    width: calc(100% / 2 - 30px);
+  }
+  .contact-section .section-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+    padding: 30px 20px 20px;
+  }
 }
 
 /* responsive style max width 600px */
@@ -437,7 +536,14 @@ header .navbar {
   .menu-section .menu-list {
     gap: 60px;
   }
-  .menu-section .menu-list .menu-item {
+  .menu-section .menu-list .menu-item,
+  .gallery-section .gallery-list .gallery-item {
     width: 100%;
+  }
+  .testimonials-section .slider-wrapper {
+    margin: 0 0 30px;
+  }
+  .testimonials-section .swiper-slide-button {
+    display: none;
   }
 }
