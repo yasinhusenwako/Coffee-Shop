@@ -72,10 +72,10 @@ This project showcases elegant design, smooth interaction, and a deep appreciati
 
 ## 📬 Contact
 
-**Developer:** [Your Name]
-**Email:** [yourname@example.com](mailto:yourname@example.com)
-**GitHub:** [github.com/yourusername](https://github.com/yourusername)
-**Website:** [shegarcoffee.com](#) (optional)
+**Developer:** [Yasin Husen]
+**Email:** (yhusen636@gmail.com)
+**GitHub:** (https://github.com/yasinhusenwako)
+**Website:** [shegarcoffee.com]https://github.com/yasinhusenwako
 
 ---
 
